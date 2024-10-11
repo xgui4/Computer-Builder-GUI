@@ -1,17 +1,19 @@
 package net.xgui4;
 
-import net.xgui4.Hardware.Component.BatteryLithiumIon;
+import net.xgui4.Hardware.Component.LithiumBattery;
 
 public class Simulator {
     public static void main(String[] args) {
-        BatteryLithiumIon battery = new BatteryLithiumIon(1000, 100);
+        LithiumBattery battery = new LithiumBattery(1000, 100);
 
-        battery.checkStatus();
+        System.out.println(battery.getSummary());
+
+        System.out.println(battery.getLithiumBatteryStatus().getMessage());
 
         for (int i = 0; i < 100; i++) {
             battery.degradeHealth();
         }
 
-        battery.checkStatus();
+        System.out.println(battery.getLithiumBatteryStatus().getMessage());
     }
 }
