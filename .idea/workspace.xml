@@ -10,28 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f278a3d6-2f4b-46e1-9f1b-f66e17dfb372" name="Changes" comment="continuation du projet">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/simulator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/xgui4/Hardware/Component/TPM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/xgui4/Hardware/ComputerType/Computer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/xgui4/Hardware/ComputerType/Laptop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/xgui4/Software/Firmware/Firmware.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/xgui4/Software/Firmware/FirmwareType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/xgui4/Software/Firmware/SplashScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/xgui4/Software/Firmware/UEFI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/xgui4/Software/OperatingSystem/OperatingSystem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/xgui4/Hardware/Component/Battery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/xgui4/Hardware/Component/Battery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/xgui4/Hardware/Component/LithiumBattery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/xgui4/Hardware/Component/LithiumBattery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/xgui4/Hardware/Computer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/xgui4/Hardware/PowerState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/xgui4/Hardware/Desktop.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/xgui4/Hardware/Laptop.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/xgui4/Hardware/Component/TPM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/xgui4/Hardware/Component/TPM.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/xgui4/Simulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/xgui4/Simulator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/net/xgui4/Hardware/Component/LithiumBatteryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/xgui4/Software/Firmware/SplashScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/xgui4/Software/Firmware/SplashScreen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +161,7 @@
       <recent name="net.xgui4.Hardware.Component" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Computer-Simulator-CLI [javadoc]">
+  <component name="RunManager" selected="JAR Application.simulator.jar">
     <configuration name="Computer-Simulator-CLI [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -274,8 +256,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.Computer-Simulator-CLI [javadoc]" />
         <item itemvalue="JAR Application.simulator.jar" />
+        <item itemvalue="Gradle.Computer-Simulator-CLI [javadoc]" />
         <item itemvalue="Gradle.Computer-Simulator-CLI [jar]" />
         <item itemvalue="Gradle.Computer-Simulator-CLI [build]" />
         <item itemvalue="Gradle.Computer-Simulator-CLI [compileJava]" />

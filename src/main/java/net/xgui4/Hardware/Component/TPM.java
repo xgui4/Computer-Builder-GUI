@@ -9,5 +9,6 @@ public class TPM {
      * Cette méthode instintu le module de plateforme sécuritsé
      */
     public void start() {
+        System.out.println("The TPM is initiated");
     }
 }

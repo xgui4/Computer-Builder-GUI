@@ -30,6 +30,10 @@ public class Simulator {
 
         System.out.println(battery.getLithiumBatteryStatus().getMessage());
 
+        battery.inflate();
+
+        System.out.println(battery.getLithiumBatteryStatus().getMessage());
+
         microsoftSurface.shutdown();
     }
 }
