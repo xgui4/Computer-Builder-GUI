@@ -1,5 +1,8 @@
 package net.xgui4.Hardware.Component;
 
+/**
+ * Cette classe abstraite représente une batterie
+ */
 public abstract class Battery {
     private String manufacturer;
     private String model;
