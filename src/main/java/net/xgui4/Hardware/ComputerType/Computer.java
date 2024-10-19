@@ -7,21 +7,22 @@ import net.xgui4.Hardware.PowerState;
  */
 public abstract class Computer {
     private PowerState powerState;
-    public Computer()  {
+
+    public Computer() {
         powerState = PowerState.OFF;
     }
 
     /**
      * Cette méthode permet de démarrer l'ordinateur
      */
-    protected void setPowerOn(){
+    protected void setPowerOn() {
         powerState = PowerState.ON;
     }
 
     /**
      * Cette méthode permet d'éteindre l'ordinateur
      */
-    protected void setPowerOff(){
+    protected void setPowerOff() {
         powerState = PowerState.OFF;
     }
 

@@ -4,13 +4,14 @@ package net.xgui4.Hardware.Component;
  * Cette classe abstraite représente une batterie
  */
 public abstract class Battery {
-    private String manufacturer;
-    private String model;
-    private String name;
+    private final String manufacturer;
+    private final String model;
+    private final String name;
     private int capacity;
 
     /**
      * Le contructueur de Battery
+     *
      * @param capacity
      */
     public Battery(String manufacturer, String model, String name, int capacity) {
@@ -22,6 +23,7 @@ public abstract class Battery {
 
     /**
      * Le contructueur de Battery, avec le manufacturier, le modèle et le name avec leur valeur par défaut.
+     *
      * @param capacity
      */
     public Battery(int capacity) {
@@ -33,6 +35,7 @@ public abstract class Battery {
 
     /**
      * le getter de la capacité
+     *
      * @return la capacité
      */
     public int getCapacity() {
@@ -45,6 +48,7 @@ public abstract class Battery {
 
     /**
      * Le getter de l'attribut modèle
+     *
      * @return
      */
     public String getModel() {
@@ -53,6 +57,7 @@ public abstract class Battery {
 
     /**
      * Le getter de l'attribut name
+     *
      * @return le nom
      */
     public String getName() {
@@ -61,6 +66,7 @@ public abstract class Battery {
 
     /**
      * Le getter de l'attribut manufacturer
+     *
      * @return le manufacturier
      */
     public String getManufacturer() {
@@ -69,11 +75,12 @@ public abstract class Battery {
 
     /**
      * Génère les détailles lisible de la batterie.
+     *
      * @return les détailles de la batterie
      */
     public String getSummary() {
         return "Manufacturer : " + getManufacturer() + "\n" +
-                "Model : " +  getModel() + "\n" +
+                "Model : " + getModel() + "\n" +
                 "Name : " + getName() + "\n" +
                 "Capacity : " + getCapacity() + "\n";
     }

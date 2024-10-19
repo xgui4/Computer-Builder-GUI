@@ -1,7 +1,6 @@
 package net.xgui4;
 
 import net.xgui4.Hardware.Component.LithiumBattery;
-import net.xgui4.Hardware.ComputerType.Computer;
 import net.xgui4.Hardware.ComputerType.Laptop;
 import net.xgui4.Software.Firmware.Firmware;
 import net.xgui4.Software.Firmware.SplashScreen;

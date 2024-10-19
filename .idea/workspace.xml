@@ -121,38 +121,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Simulator.executor": "Run",
-    "Gradle.Build Computer-Simulator-CLI.executor": "Run",
-    "Gradle.Computer-Simulator-CLI [:net.xgui4.Simulator.main()].executor": "Run",
-    "Gradle.Computer-Simulator-CLI [assemble].executor": "Run",
-    "Gradle.Computer-Simulator-CLI [build].executor": "Run",
-    "Gradle.Computer-Simulator-CLI [check].executor": "Run",
-    "Gradle.Computer-Simulator-CLI [classes].executor": "Run",
-    "Gradle.Computer-Simulator-CLI [clean].executor": "Run",
-    "Gradle.Computer-Simulator-CLI [compileJava].executor": "Run",
-    "Gradle.Computer-Simulator-CLI [init].executor": "Run",
-    "Gradle.Computer-Simulator-CLI [jar].executor": "Run",
-    "Gradle.Computer-Simulator-CLI [javadoc].executor": "Run",
-    "Gradle.Computer-Simulator-CLI [test].executor": "Run",
-    "Gradle.Computer-Simulator-CLI [updateDaemonJvm].executor": "Run",
-    "Gradle.Computer-Simulator-CLI [wrapper].executor": "Run",
-    "JAR Application.simulator.jar.executor": "Run",
-    "OverrideImplement.generate.javadoc": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/programmation/Computer-Simulator-CLI",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Simulator.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build Computer-Simulator-CLI.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Computer-Simulator-CLI [:net.xgui4.Simulator.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Computer-Simulator-CLI [assemble].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Computer-Simulator-CLI [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Computer-Simulator-CLI [check].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Computer-Simulator-CLI [classes].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Computer-Simulator-CLI [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Computer-Simulator-CLI [compileJava].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Computer-Simulator-CLI [init].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Computer-Simulator-CLI [jar].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Computer-Simulator-CLI [javadoc].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Computer-Simulator-CLI [test].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Computer-Simulator-CLI [updateDaemonJvm].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Computer-Simulator-CLI [wrapper].executor&quot;: &quot;Run&quot;,
+    &quot;JAR Application.simulator.jar.executor&quot;: &quot;Run&quot;,
+    &quot;OverrideImplement.generate.javadoc&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/programmation/Computer-Simulator-CLI&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />

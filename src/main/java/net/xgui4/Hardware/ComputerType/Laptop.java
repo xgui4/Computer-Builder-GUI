@@ -14,9 +14,10 @@ public class Laptop extends Computer {
 
     /**
      * Le contructeur d'un ordinateur portable
-     * @param battery : une batterie (l'interface Battery)
+     *
+     * @param battery  : une batterie (l'interface Battery)
      * @param firmware : le micrologiciel de la carte mère (interface Firmware)
-     * @param os : le système d'exploitation (La classe OperatingSystem)
+     * @param os       : le système d'exploitation (La classe OperatingSystem)
      */
     public Laptop(Battery battery, Firmware firmware, OperatingSystem os) {
         super();
@@ -27,6 +28,7 @@ public class Laptop extends Computer {
 
     /**
      * Le getter de la battery
+     *
      * @return une batterie (interface Battery)
      */
     public Battery getBattery() {

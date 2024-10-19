@@ -10,8 +10,9 @@ public abstract class Firmware {
 
     /**
      * Le constructeur du micrologiiel
-     * @param type : le type du micrologiciel (Enum FirmwareType)
-     * @param name : le nom du micrologiciel
+     *
+     * @param type         : le type du micrologiciel (Enum FirmwareType)
+     * @param name         : le nom du micrologiciel
      * @param manufacturer : le nom du manufacturier
      */
     public Firmware(FirmwareType type, String name, String manufacturer) {
@@ -22,6 +23,7 @@ public abstract class Firmware {
 
     /**
      * Le getter du manufacturier
+     *
      * @return le manufacturier
      */
     public String getManufacturer() {
@@ -30,6 +32,7 @@ public abstract class Firmware {
 
     /**
      * Le getter du type de manufacturier
+     *
      * @return le type du micrologiciel (Enum FirmwareType)
      */
     public FirmwareType getType() {
@@ -38,6 +41,7 @@ public abstract class Firmware {
 
     /**
      * le getter du nom du micrologiciel
+     *
      * @return le nom du micrologiciel
      */
     public String getName() {

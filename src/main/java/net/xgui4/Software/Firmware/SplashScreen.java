@@ -8,7 +8,7 @@ public class SplashScreen {
     /**
      * Affiche l'écran splash
      */
-    public void display(){
+    public void display() {
         System.out.println("POST Screen is coming soon!");
     }
 

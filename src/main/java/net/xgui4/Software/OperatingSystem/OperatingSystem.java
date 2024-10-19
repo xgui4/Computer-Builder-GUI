@@ -8,6 +8,7 @@ public class OperatingSystem {
 
     /**
      * Le constructeur d'un sytème d'exploitation
+     *
      * @param name : le nom Système d'exploitation
      */
     public OperatingSystem(String name) {
@@ -16,6 +17,7 @@ public class OperatingSystem {
 
     /**
      * Le getter du nom du OS
+     *
      * @return
      */
     public String getName() {
