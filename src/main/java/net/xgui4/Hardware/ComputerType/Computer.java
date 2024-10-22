@@ -8,6 +8,9 @@ import net.xgui4.Hardware.PowerState;
 public abstract class Computer {
     private PowerState powerState;
 
+    /**
+     * Le constructeur d'un ordinateur
+     */
     public Computer() {
         powerState = PowerState.OFF;
     }

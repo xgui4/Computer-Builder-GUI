@@ -41,7 +41,7 @@ public class Laptop extends Computer {
     @Override
     public void powerOn() {
         setPowerOn();
-        System.out.println("Booting " + os.getName() + " in progress...");
+        os.boot();
     }
 
     /**
@@ -58,6 +58,6 @@ public class Laptop extends Computer {
     @Override
     public void shutdown() {
         powerOff();
-        System.out.println("Shutting down " + os.getName() + " in progress...");
+        os.shutdown();
     }
 }

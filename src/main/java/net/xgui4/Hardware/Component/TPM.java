@@ -6,6 +6,13 @@ package net.xgui4.Hardware.Component;
 public class TPM {
 
     /**
+     * Le contructeur du TPM
+     */
+    public TPM() {
+
+    }
+
+    /**
      * Cette méthode instintu le module de plateforme sécuritsé
      */
     public void start() {

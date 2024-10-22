@@ -12,24 +12,15 @@ public abstract class Battery {
     /**
      * Le contructueur de Battery
      *
-     * @param capacity
+     * @param capacity -> la capacité de la batterie
+     * @param manufacturer -> le manufacturier de la batterie
+     * @param model -> le modèle de la batterie
+     * @param name -> le nom de la batterie
      */
     public Battery(String manufacturer, String model, String name, int capacity) {
         this.manufacturer = manufacturer;
         this.model = model;
         this.name = name;
-        this.capacity = capacity;
-    }
-
-    /**
-     * Le contructueur de Battery, avec le manufacturier, le modèle et le name avec leur valeur par défaut.
-     *
-     * @param capacity
-     */
-    public Battery(int capacity) {
-        manufacturer = "Microsoft";
-        model = "Generic Battery";
-        name = "Generic Battery Driver";
         this.capacity = capacity;
     }
 
@@ -49,7 +40,7 @@ public abstract class Battery {
     /**
      * Le getter de l'attribut modèle
      *
-     * @return
+     * @return la string du model
      */
     public String getModel() {
         return model;

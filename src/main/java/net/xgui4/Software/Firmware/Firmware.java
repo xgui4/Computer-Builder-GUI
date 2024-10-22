@@ -4,19 +4,16 @@ package net.xgui4.Software.Firmware;
  * La classe abstraite du micrologiciel (Firmware)
  */
 public abstract class Firmware {
-    private final FirmwareType type;
     private final String name;
     private final String manufacturer;
 
     /**
      * Le constructeur du micrologiiel
      *
-     * @param type         : le type du micrologiciel (Enum FirmwareType)
      * @param name         : le nom du micrologiciel
      * @param manufacturer : le nom du manufacturier
      */
-    public Firmware(FirmwareType type, String name, String manufacturer) {
-        this.type = type;
+    public Firmware(String name, String manufacturer) {
         this.name = name;
         this.manufacturer = manufacturer;
     }
@@ -28,15 +25,6 @@ public abstract class Firmware {
      */
     public String getManufacturer() {
         return manufacturer;
-    }
-
-    /**
-     * Le getter du type de manufacturier
-     *
-     * @return le type du micrologiciel (Enum FirmwareType)
-     */
-    public FirmwareType getType() {
-        return type;
     }
 
     /**

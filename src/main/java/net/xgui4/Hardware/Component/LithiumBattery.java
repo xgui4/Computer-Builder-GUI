@@ -18,7 +18,7 @@ public class LithiumBattery extends Battery {
      */
     public LithiumBattery(String manufacturer, String model, String name, int capacity, int capacityThreshold) {
         super(manufacturer, model, name, capacity);
-        lithiumBatteryStatus = LithiumBatteryStatus.NEW;
+        lithiumBatteryStatus = new LithiumBatteryStatus(BatteryStatus.NEW);
         this.capacityThreshold = capacityThreshold;
     }
 
@@ -29,7 +29,7 @@ public class LithiumBattery extends Battery {
     public void degradeHealth() {
         super.setCapacity(getCapacity() - 10);
         if (getCapacity() < capacityThreshold) {
-            lithiumBatteryStatus = LithiumBatteryStatus.BAD;
+            lithiumBatteryStatus = new LithiumBatteryStatus(BatteryStatus.BAD);
         }
     }
 
@@ -51,7 +51,7 @@ public class LithiumBattery extends Battery {
      * Cette méthode permet de rendre la batterie en spicy pillow
      */
     public void inflate() {
-        lithiumBatteryStatus = LithiumBatteryStatus.INFLATED;
+        lithiumBatteryStatus = new LithiumBatteryStatus(BatteryStatus.INFLATED);
     }
 
     /**
