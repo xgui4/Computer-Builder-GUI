@@ -31,6 +31,7 @@ public class Laptop extends Computer {
      *
      * @return une batterie (interface Battery)
      */
+    @Override
     public Battery getBattery() {
         return battery;
     }
@@ -59,5 +60,10 @@ public class Laptop extends Computer {
     public void shutdown() {
         powerOff();
         os.shutdown();
+    }
+
+    @Override
+    public void getInfo(Battery battery) {
+        System.out.println(battery.getSummary());
     }
 }

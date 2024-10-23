@@ -1,5 +1,6 @@
 package net.xgui4.Hardware.ComputerType;
 
+import net.xgui4.Hardware.Component.Battery;
 import net.xgui4.Hardware.PowerState;
 
 /**
@@ -18,16 +19,22 @@ public abstract class Computer {
     /**
      * Cette méthode permet de démarrer l'ordinateur
      */
-    protected void setPowerOn() {
+    public void setPowerOn() {
         powerState = PowerState.ON;
     }
 
     /**
      * Cette méthode permet d'éteindre l'ordinateur
      */
-    protected void setPowerOff() {
+    public void setPowerOff() {
         powerState = PowerState.OFF;
     }
+
+    public void boot() {
+        powerOn();
+    }
+
+    public abstract void getInfo(Battery battery);
 
     /**
      * Cette méthode abstraite permet de démarrer l'ordinateur
@@ -43,4 +50,6 @@ public abstract class Computer {
      * Cette méthode abstraite permet de fermer le système d'exploitation et l'ordinateur correctement
      */
     public abstract void shutdown();
+
+    public abstract Battery getBattery();
 }
