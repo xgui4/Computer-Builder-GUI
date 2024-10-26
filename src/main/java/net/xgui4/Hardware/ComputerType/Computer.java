@@ -20,6 +20,7 @@ public abstract class Computer {
     /**
      * Cette méthode permet de démarrer l'ordinateur
      */
+    public void setPowerOn() {
         powerState = PowerState.ON;
     }
 
