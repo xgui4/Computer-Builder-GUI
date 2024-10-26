@@ -61,4 +61,9 @@ public class Laptop extends Computer {
         powerOff();
         os.shutdown();
     }
+
+    @Override
+    public void getInfo(Battery battery) {
+        System.out.println(battery.getSummary());
+    }
 }

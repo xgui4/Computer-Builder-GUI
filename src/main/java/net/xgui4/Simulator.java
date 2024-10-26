@@ -7,35 +7,40 @@ import net.xgui4.Software.Firmware.UEFI;
 import net.xgui4.Software.OperatingSystem.OperatingSystem;
 import net.xgui4.Software.OperatingSystem.Windows;
 
+import java.util.Scanner;
+
 /**
  * Ceci est l'ébauche de l'applis/jeux
  */
 public class Simulator {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter your username: ");
+        String username = scanner.nextLine();
+
+        System.out.print("Enter your computer type 1 (Laptop), 2 (Desktop : coming soon): ");
+        int computerType = scanner.nextInt();
+
+        if (computerType != 1) {
+            System.out.println("Invalid computer type");
+        }
+
+        scanner.close();
+
+        Player player = new Player(username);
+
         OperatingSystem microsoftWindows11 = new Windows("Microsoft Windows 11");
         Firmware microsoftUEFI = new UEFI("Microsoft Surface UEFI", "Microsoft");
         Laptop microsoftSurface = new Laptop(new LithiumBattery("Microsoft", "Generic Battery", "Generic Battery", 1000, 100), microsoftUEFI, microsoftWindows11);
 
-        microsoftUEFI.post();
+        player.chooseComputer(microsoftSurface);
 
-        microsoftSurface.powerOn();
+        player.play();
+        
+        player.analyse();
 
-        LithiumBattery battery = (LithiumBattery) microsoftSurface.getBattery();
+        player.quit();
 
-        System.out.println(battery.getSummary());
-
-        System.out.println(battery.getLithiumBatteryStatus().getMessage());
-
-        for (int i = 0; i < 100; i++) {
-            battery.degradeHealth();
-        }
-
-        System.out.println(battery.getLithiumBatteryStatus().getMessage());
-
-        battery.inflate();
-
-        System.out.println(battery.getLithiumBatteryStatus().getMessage());
-
-        microsoftSurface.shutdown();
     }
 }

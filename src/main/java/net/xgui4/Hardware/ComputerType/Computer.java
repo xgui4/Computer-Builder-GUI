@@ -20,16 +20,21 @@ public abstract class Computer {
     /**
      * Cette méthode permet de démarrer l'ordinateur
      */
-    protected void setPowerOn() {
         powerState = PowerState.ON;
     }
 
     /**
      * Cette méthode permet d'éteindre l'ordinateur
      */
-    protected void setPowerOff() {
+    public void setPowerOff() {
         powerState = PowerState.OFF;
     }
+
+    public void boot() {
+        powerOn();
+    }
+
+    public abstract void getInfo(Battery battery);
 
     /**
      * Cette méthode abstraite permet de démarrer l'ordinateur
