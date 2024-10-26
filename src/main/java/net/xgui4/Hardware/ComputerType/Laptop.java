@@ -31,6 +31,7 @@ public class Laptop extends Computer {
      *
      * @return une batterie (interface Battery)
      */
+    @Override
     public Battery getBattery() {
         return battery;
     }
@@ -53,7 +54,7 @@ public class Laptop extends Computer {
     }
 
     /**
-     * Cette méthode abstraite permet de fermer le système d'exploitation et l'ordinateur correctement
+     * Cette méthode permet de fermer le système d'exploitation et l'ordinateur correctement
      */
     @Override
     public void shutdown() {

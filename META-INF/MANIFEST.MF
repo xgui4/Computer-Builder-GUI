@@ -1,3 +1,4 @@
 Manifest-Version: 1.0
+Implementation-Version: 0.0.1
+Implementation-Title: Computer-Simulator
 Main-Class: net.xgui4.Simulator
-
