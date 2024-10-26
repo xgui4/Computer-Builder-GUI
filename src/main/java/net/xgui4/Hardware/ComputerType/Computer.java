@@ -3,12 +3,17 @@ package net.xgui4.Hardware.ComputerType;
 import net.xgui4.Exception.NoBatteryInComputerException;
 import net.xgui4.Hardware.Component.Battery;
 import net.xgui4.Hardware.PowerState;
+import net.xgui4.Software.Firmware.Firmware;
+import net.xgui4.Software.OperatingSystem.OperatingSystem;
 
 /**
  * Cette classe abstraite représente un ordinateur
  */
 public abstract class Computer {
+    private String name;
+    private Firmware firmware;
     private PowerState powerState;
+    private OperatingSystem system;
 
     /**
      * Le constructeur d'un ordinateur
@@ -17,9 +22,12 @@ public abstract class Computer {
         powerState = PowerState.OFF;
     }
 
+
+
     /**
      * Cette méthode permet de démarrer l'ordinateur
      */
+    public void setPowerOn() {
         powerState = PowerState.ON;
     }
 

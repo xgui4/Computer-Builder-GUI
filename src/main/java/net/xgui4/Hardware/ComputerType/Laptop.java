@@ -8,9 +8,9 @@ import net.xgui4.Software.OperatingSystem.OperatingSystem;
  * Cette classe abstraite représente un ordinateur portable (laptop)
  */
 public class Laptop extends Computer {
-    Battery battery;
-    Firmware firmware;
-    OperatingSystem os;
+    private Battery battery;
+    private Firmware firmware;
+    private OperatingSystem os;
 
     /**
      * Le contructeur d'un ordinateur portable
