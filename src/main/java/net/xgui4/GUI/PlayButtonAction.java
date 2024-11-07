@@ -1,6 +1,6 @@
 package net.xgui4.GUI;
 
-import net.xgui4.Hardware.Component.LithiumBattery;
+import net.xgui4.Hardware.Component.Power.LithiumBattery;
 import net.xgui4.Hardware.ComputerType.Laptop;
 import net.xgui4.Player;
 import net.xgui4.Software.Firmware.Firmware;

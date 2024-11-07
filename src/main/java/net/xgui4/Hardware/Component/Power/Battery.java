@@ -1,9 +1,11 @@
-package net.xgui4.Hardware.Component;
+package net.xgui4.Hardware.Component.Power;
+
+import net.xgui4.Hardware.Component.Memory.StorageDevice;
 
 /**
  * Cette classe abstraite représente une batterie
  */
-public abstract class Battery {
+public abstract class Battery implements StorageDevice.PowerComponent {
     private final String manufacturer;
     private final String model;
     private final String name;

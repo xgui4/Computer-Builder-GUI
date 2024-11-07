@@ -1,7 +1,7 @@
 package net.xgui4.Hardware.ComputerType;
 
-import net.xgui4.Exception.NoBatteryInComputerException;
-import net.xgui4.Hardware.Component.Battery;
+import net.xgui4.Exception.NoBatteryException;
+import net.xgui4.Hardware.Component.Power.Battery;
 import net.xgui4.Hardware.PowerState;
 import net.xgui4.Software.Firmware.Firmware;
 import net.xgui4.Software.OperatingSystem.OperatingSystem;
@@ -70,7 +70,7 @@ public abstract class Computer {
     /**
      * Le getter de la battery
      * @return la battery si l'ordinateur possède une batterie (interface Battery)
-     * @exception NoBatteryInComputerException lance une excpetion si la classe d'implémentation ne possède pas de batteriy
+     * @exception NoBatteryException lance une excpetion si la classe d'implémentation ne possède pas de batteriy
      */
     public abstract Battery getBattery();
 }

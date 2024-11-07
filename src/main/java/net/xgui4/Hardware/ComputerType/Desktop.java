@@ -1,6 +1,6 @@
 package net.xgui4.Hardware.ComputerType;
 
-import net.xgui4.Hardware.Component.Battery;
+import net.xgui4.Hardware.Component.Power.Battery;
 
 public class Desktop extends Computer{
     /**
@@ -16,7 +16,7 @@ public class Desktop extends Computer{
      */
     @Override
     public void powerOn() {
-
+        super.setPowerOn();
     }
 
     /**
@@ -24,7 +24,7 @@ public class Desktop extends Computer{
      */
     @Override
     public void powerOff() {
-
+        super.setPowerOff();
     }
 
     /**
@@ -32,7 +32,7 @@ public class Desktop extends Computer{
      */
     @Override
     public void shutdown() {
-
+        setPowerOff();
     }
 
     /**

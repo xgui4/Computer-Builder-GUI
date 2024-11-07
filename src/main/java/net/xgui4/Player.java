@@ -1,6 +1,5 @@
 package net.xgui4;
 
-import net.xgui4.Hardware.Component.Battery;
 import net.xgui4.Hardware.ComputerType.Computer;
 
 public class Player {

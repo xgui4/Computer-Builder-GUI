@@ -1,6 +1,6 @@
 package net.xgui4.Hardware.ComputerType;
 
-import net.xgui4.Hardware.Component.Battery;
+import net.xgui4.Hardware.Component.Power.Battery;
 import net.xgui4.Software.Firmware.Firmware;
 import net.xgui4.Software.OperatingSystem.OperatingSystem;
 
