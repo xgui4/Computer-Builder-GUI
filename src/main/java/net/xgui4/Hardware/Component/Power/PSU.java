@@ -1,27 +1,20 @@
 package net.xgui4.Hardware.Component.Power;
 
-/**
- * Cette classe abstraite représente une batterie
- */
-public abstract class Battery implements PowerComponent {
+public class PSU implements PowerComponent {
     private final String manufacturer;
     private final String model;
     private final String name;
     private int capacity;
+    private final int healthCap ;
+    public final static int NORMAL_USAGE_DAMAGE = 10;
+    private PowerSupplyHealthStatus powerSupplyHeathStatus;
 
-    /**
-     * Le contructueur de Battery
-     *
-     * @param capacity -> la capacité de la batterie
-     * @param manufacturer -> le manufacturier de la batterie
-     * @param model -> le modèle de la batterie
-     * @param name -> le nom de la batterie
-     */
-    public Battery(String manufacturer, String model, String name, int capacity) {
+    public PSU(String manufacturer, String model, String name, int healthCap) {
         this.manufacturer = manufacturer;
         this.model = model;
         this.name = name;
-        this.capacity = capacity;
+        this.healthCap = healthCap;
+        powerSupplyHeathStatus = PowerSupplyHealthStatus.NEW;
     }
 
     /**
@@ -32,10 +25,6 @@ public abstract class Battery implements PowerComponent {
     @Override
     public int getCapacity() {
         return capacity;
-    }
-
-    protected void setCapacity(int capacity) {
-        this.capacity = capacity;
     }
 
     /**
@@ -69,7 +58,7 @@ public abstract class Battery implements PowerComponent {
     }
 
     /**
-     * Génère les détailles lisible de la batterie.
+     * Génère les détailles lisible de l'unité d'alimentation.
      *
      * @return les détailles de la batterie
      */
@@ -82,9 +71,14 @@ public abstract class Battery implements PowerComponent {
     }
 
     /**
-     * Réduit la santé de la batterie
+     * Réduit la santé de  l'unité d'alimentation.
      */
-
     @Override
-    public abstract void degradeHealth();
+    public void degradeHealth() {
+        this.capacity =- NORMAL_USAGE_DAMAGE;
+        powerSupplyHeathStatus = PowerSupplyHealthStatus.GOOD;
+        if (capacity == healthCap) {
+            powerSupplyHeathStatus = PowerSupplyHealthStatus.BAD;
+        }
+    }
 }

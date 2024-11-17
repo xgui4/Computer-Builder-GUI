@@ -1,8 +1,22 @@
 package net.xgui4.Hardware.ComputerType;
 
+import net.xgui4.Hardware.Component.Motherboard;
 import net.xgui4.Hardware.Component.Power.Battery;
+import net.xgui4.Hardware.Component.Power.PowerComponent;
+import net.xgui4.Software.OperatingSystem.OperatingSystem;
 
 public class Desktop extends Computer{
+    /**
+     * Le constructeur d'un ordinateur
+     *
+     * @param name        le nom de l'ordinateur
+     * @param system      - le système d'exploitation de l'ordinateur
+     * @param motherboard la carte mère et ces composants
+     */
+    public Desktop(String name, OperatingSystem system, Motherboard motherboard, PowerComponent powerComponent) {
+        super(name, system, motherboard, powerComponent);
+    }
+
     /**
      * @param battery
      */
@@ -33,16 +47,5 @@ public class Desktop extends Computer{
     @Override
     public void shutdown() {
         setPowerOff();
-    }
-
-    /**
-     * Le getter de la battery
-     *
-     * @return la battery si l'ordinateur possède une batterie (interface Battery)
-     * @throws NoBatteryInComputerException lance une excpetion si la classe d'implémentation ne possède pas de batteriy
-     */
-    @Override
-    public Battery getBattery() {
-        return null;
     }
 }
